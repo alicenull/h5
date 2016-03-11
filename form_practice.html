@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <metal charset="utf-8">
+        <title>Qestionaire</title>
+        <style>
+            body {
+                background-image: url("http://www.loveyd.com/upimg/allimgs/090226/02345919.gif");
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+
+            #title {
+                margin-left: 30em;
+                background-color: skyblue;
+                padding: 0px;
+            }
+
+            li {
+                font-size: 150%;
+                color: purple;
+                background-color: pink;
+            }
+
+            form {
+
+                border: 1px dashed skyblue;
+                width: 30em;
+                border-radius: 2em;
+                padding-left: 1em;
+                font-family: cursive;
+                margin: 0px auto;
+            }
+        </style>
+        <script>
+            function Thank() {
+                alert("Thank you for your answer!");
+            }
+            function sure() {
+                alert("sure to reset?");
+            }
+        </script>
+
+</head>
+<body>
+<div id="title">
+    <h1>Do U love reading?</h1>
+</div>
+<form>
+    <ol>
+        <li>what's your name?</li>
+        </br>
+        <input type="text" name="name" value="">
+
+        <li>what's your gender?</li>
+        </br>
+        <label>Male</lable>
+            <input type="radio" name="gender" value="male" checked="checked">
+            <label>Female</lable>
+                <input type="radio" name="gender" value="male">
+
+                <li>Do u love reading?</li>
+                </br>
+                <label>Yes</lable>
+                    <input type="radio" name="love" value="like" checked="checked">
+                    <label>No</lable>
+                        <input type="radio" name="love" value="like">
+
+                        <li>What types of books u love to read?</li>
+                        </br>
+                        <label>about love</label>
+                        <input type="checkbox" name="type1" value="about love">
+                        <label>about history</label>
+                        <input type="checkbox" name="type2" value="about history"></br>
+                        <label>about reasoning
+                            <input type="checkbox" name="type3" value="about reasoning">
+                            <label>about biolography</label>
+                            <input type="checkbox" name="type4" value="about biolography"></br>
+                            <label>others</label>
+                            <input type="text" name="type5" value="">
+
+                            <li>Who is your favorite writer?</li>
+                            </br>
+                            <select>
+                                <option value="Jane Ostine">Jane Ostine</option>
+                                <option value="Oscar Wilde">Oscar Wilde</option>
+                                <option value="Lu Xun">Lu Xun</option>
+                                <option Value="others">Others</option>
+                            </select>
+
+                            <li>Choose the book u love best and talk</br>about why u love it</li>
+                            </br>
+                            <textarea cols="50" rows="8">text in it...</textarea>
+                            </br>
+                            </br>
+                            <input type="reset" name="reset1" value="reset" onclick="sure()"/>
+                            <input type="submit" name="submit1" value="submit" onclick="Thank()"/>
+    </ol>
+</form>
+</body>
+</html>

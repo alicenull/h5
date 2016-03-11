@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <metal charset="UTF-8">
+        <title>open new site</title>
+        <script type="text/javascript">
+            function openWindow() {
+                var open = confirm("open it?");
+                if (open == true) {
+                    var url = prompt("by typing website to visit the web", "http:///www.baidu.com");
+                    if (url != null) {
+                        window.open("http:///www.baidu.com", "_blank", "width=400px,height=500px,menubar=no,toolbar=no");
+                    }
+                    else {
+                        alert("bye");
+                    }
+
+                }
+                else {
+                    alert("goodbye");
+                }
+            }
+        </script>
+
+</head>
+</body>
+<input type="button" value="open new site" onclick="openWindow()"/>
+</body>
+</html>
